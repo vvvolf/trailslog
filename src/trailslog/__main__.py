@@ -4,6 +4,8 @@ from trailslog.bot.application import create_application
 from trailslog.config import USE_PROXY
 from trailslog.config import PROXY_URL
 
+from trailslog.database.database import init_database
+
 import logging
 
 logging.basicConfig(
@@ -13,6 +15,8 @@ logging.basicConfig(
 
 def main() -> None:
     ensure_runtime_dirs()
+
+    init_database()
 
     application = create_application()
 
