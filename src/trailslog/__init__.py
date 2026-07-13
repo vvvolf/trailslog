@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from trailslog!")
+from trailslog.__main__ import main
