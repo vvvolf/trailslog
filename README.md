@@ -1,8 +1,8 @@
 # TrailsLog
 
-TrailsLog is a Telegram bot and a toolkit for collecting, organizing and exploring personal observations.
+TrailsLog is a Telegram bot for capturing observations about everyday life.
 
-The project focuses on making regular observations easy to capture, while postponing interpretation until enough data has been collected.
+Instead of forcing rigid data structures, it records what people actually want to remember. The accumulated observations later become material for analysis, reflection and AI-assisted insights.
 
 Current status: early development.
 
