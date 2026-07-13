@@ -1,14 +1,26 @@
 from trailslog.app import ensure_runtime_dirs
-from trailslog.config import load_config
+from trailslog.bot.application import create_application
 
+from trailslog.config import USE_PROXY
+from trailslog.config import PROXY_URL
+
+import logging
+
+logging.basicConfig(
+    level=logging.ERROR,
+    format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+)
 
 def main() -> None:
-    config = load_config()
+    ensure_runtime_dirs()
 
-    ensure_runtime_dirs(config)
+    application = create_application()
 
-    print("TrailsLog")
-    print(f"Project root : {config.project_root}")
-    print(f"Data directory: {config.data_dir}")
-    print("Ready.")
-    
+    print("TrailsLog started.")
+
+    if USE_PROXY:
+        print(f"Using proxy: {PROXY_URL}")
+    else:
+        print("Using direct connection")
+
+    application.run_polling()

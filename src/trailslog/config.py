@@ -1,21 +1,17 @@
-from dataclasses import dataclass
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-@dataclass(frozen=True)
-class Config:
-    project_root: Path
-    data_dir: Path
-    db_path: Path
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
+DATA_DIR = PROJECT_ROOT / "data"
 
-def load_config() -> Config:
-    project_root = Path(__file__).resolve().parents[2]
-    data_dir = project_root / "data"
+DB_PATH = DATA_DIR / "trailslog.db"
 
-    return Config(
-        project_root=project_root,
-        data_dir=data_dir,
-        db_path=data_dir / "trailslog.db",
-    )
-    
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+
+USE_PROXY = os.environ["USE_PROXY"] == "true"
+
+PROXY_URL = os.environ["PROXY_URL"]

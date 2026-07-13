@@ -7,7 +7,10 @@ authors = [
     { name = "vvvolf", email = "vvvolf@gmail.com" }
 ]
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "python-telegram-bot",
+    "dotenv",
+]
 
 [project.scripts]
 trailslog = "trailslog:main"
