@@ -30,6 +30,8 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 ## Project structure
 
 - `src/` — source code
+- `config/` — example configuration files
+- `data/` — runtime data and local user configuration
 - `docs/meta/` — project history, design notes and rationale
 
 The project grows incrementally. Every new component should solve a real problem and remain understandable.

@@ -8,7 +8,8 @@ from telegram.request import HTTPXRequest
 from trailslog.bot.handlers import start
 from trailslog.bot.handlers import command_handler
 from trailslog.bot.handlers import text_handler
-from trailslog.bot.commands import COMMANDS
+from trailslog.activities import ACTIVITIES
+from trailslog.activities import BOT_COMMANDS
 from trailslog.config import BOT_TOKEN
 from trailslog.config import USE_PROXY
 from trailslog.config import PROXY_URL
@@ -18,7 +19,7 @@ async def post_init(application: Application) -> None:
     await application.bot.set_my_commands(
         [
             BotCommand(cmd, desc)
-            for cmd, desc in COMMANDS.items()
+            for cmd, desc in ACTIVITIES.items()
         ]
     )
 
@@ -53,7 +54,7 @@ def create_application() -> Application:
         )
     )
 
-    for command in COMMANDS:
+    for command in ACTIVITIES:
         application.add_handler(
             CommandHandler(command, command_handler)
         )

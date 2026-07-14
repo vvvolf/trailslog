@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ContextTypes
 
-from trailslog.bot.commands import COMMANDS
+from trailslog.activities import ACTIVITIES
 from trailslog.database.database import save_raw_message
 
 
@@ -23,7 +23,7 @@ async def command_handler(
 
     command = update.message.text.split()[0][1:]
 
-    label = COMMANDS.get(command, command)
+    label = ACTIVITIES.get(command, command)
 
     await update.message.reply_text(
         f"""

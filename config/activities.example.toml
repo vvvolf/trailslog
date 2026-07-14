@@ -1,0 +1,58 @@
+# Telegram activities.
+# Copy this file to data/activities.toml and edit as you like.
+
+[[activity]]
+command = "duo_eng"
+label = "Duolingo English"
+
+[[activity]]
+command = "duo_spain"
+label = "Duolingo Spanish"
+
+[[activity]]
+command = "duo_math"
+label = "Duolingo Math"
+
+[[activity]]
+command = "duo_chess"
+label = "Duolingo Chess"
+
+[[activity]]
+command = "duo_music"
+label = "Duolingo Music"
+
+[[activity]]
+command = "reading"
+label = "Reading"
+
+[[activity]]
+command = "math"
+label = "Math"
+
+[[activity]]
+command = "extra_duo_eng"
+label = "Extra Duolingo English"
+
+[[activity]]
+command = "extra_duo_spain"
+label = "Extra Duolingo Spanish"
+
+[[activity]]
+command = "extra_duo_math"
+label = "Extra Duolingo Math"
+
+[[activity]]
+command = "extra_duo_chess"
+label = "Extra Duolingo Chess"
+
+[[activity]]
+command = "extra_duo_music"
+label = "Extra Duolingo Music"
+
+[[activity]]
+command = "extra_reading"
+label = "Extra Reading"
+
+[[activity]]
+command = "extra_math"
+label = "Extra Math"
