@@ -8,6 +8,7 @@ from telegram.request import HTTPXRequest
 from trailslog.bot.handlers import start
 from trailslog.bot.handlers import command_handler
 from trailslog.bot.handlers import text_handler
+from trailslog.bot.handlers import report_handler
 from trailslog.activities import ACTIVITIES
 from trailslog.activities import BOT_COMMANDS
 from trailslog.config import BOT_TOKEN
@@ -51,6 +52,13 @@ def create_application() -> Application:
         MessageHandler(
             filters.TEXT & ~filters.COMMAND,
             text_handler,
+        )
+    )
+
+    application.add_handler(
+        CommandHandler(
+            "report",
+            report_handler,
         )
     )
 

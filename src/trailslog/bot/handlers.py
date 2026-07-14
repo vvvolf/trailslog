@@ -4,6 +4,8 @@ from telegram.ext import ContextTypes
 from trailslog.activities import ACTIVITIES
 from trailslog.database.database import save_raw_message
 
+from trailslog.reports import build_today_report
+
 
 async def start(
     update: Update,
@@ -55,3 +57,15 @@ Made a mistake? Just reply with DEL or -.
 Ошибся? Просто ответь DEL или -.
         """
         )
+
+
+async def report_handler(
+    update: Update,
+    context: ContextTypes.DEFAULT_TYPE,
+):
+
+    report = build_today_report(
+        update.effective_chat.id
+    )
+
+    await update.message.reply_text(report)

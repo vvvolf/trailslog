@@ -25,6 +25,11 @@ def save_raw_message(update: Update) -> None:
     if message.text is None:
         return
 
+    reply_to_message_id = None
+
+    if message.reply_to_message:
+        reply_to_message_id = message.reply_to_message.message_id
+
     with sqlite3.connect(DB_PATH) as connection:
         connection.execute(
             """
@@ -35,10 +40,11 @@ def save_raw_message(update: Update) -> None:
                 user_id,
                 message_date,
                 received_at,
+                reply_to_message_id,
                 text,
                 raw_json
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 update.update_id,
@@ -47,6 +53,7 @@ def save_raw_message(update: Update) -> None:
                 message.from_user.id,
                 message.date.timestamp(),
                 int(time.time()),
+                reply_to_message_id,
                 message.text,
                 json.dumps(
                     update.to_dict(),
@@ -54,4 +61,31 @@ def save_raw_message(update: Update) -> None:
                 ),
             ),
         )
-        
+
+
+def get_messages_for_date(
+    chat_id: int,
+    date_from: int,
+    date_to: int,
+):
+    with sqlite3.connect(DB_PATH) as connection:
+
+        connection.row_factory = sqlite3.Row
+
+        cursor = connection.execute(
+            """
+            SELECT *
+            FROM raw_telegram_messages
+            WHERE chat_id = ?
+              AND message_date >= ?
+              AND message_date < ?
+            ORDER BY message_date
+            """,
+            (
+                chat_id,
+                date_from,
+                date_to,
+            ),
+        )
+
+        return cursor.fetchall()

@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS raw_telegram_messages (
     message_date        INTEGER NOT NULL,
     received_at         INTEGER NOT NULL,
 
+    reply_to_message_id INTEGER,
+
     text                TEXT NOT NULL,
     raw_json            TEXT NOT NULL
 );
