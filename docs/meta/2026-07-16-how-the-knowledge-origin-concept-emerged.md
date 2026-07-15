@@ -2,6 +2,8 @@
 
 Category: Observation
 
+Knowledge type: Knowledge acquisition
+
 Настоящий документ описывает путь появления принципа, сформулированного в документе [Знание и знание о происхождении знания](./2026-07-16-how-the-knowledge-origin-concept-emerged.md).
 
 Сам принцип не был придуман заранее.
