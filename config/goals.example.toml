@@ -1,0 +1,13 @@
+[[goal]]
+
+id = "daily"
+
+required = [
+    "duo_eng",
+    "math",
+    "reading",
+]
+
+success_message = "🎉 Цели выполнены! Получи награду!"
+
+failure_message = "До награды осталось выполнить:"

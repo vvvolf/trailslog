@@ -65,7 +65,8 @@ async def report_handler(
 ):
 
     report = build_today_report(
-        update.effective_chat.id
+        update.effective_chat.id,
+        update.message.from_user.id
     )
 
     await update.message.reply_text(report)

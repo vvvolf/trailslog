@@ -65,6 +65,7 @@ def save_raw_message(update: Update) -> None:
 
 def get_messages_for_date(
     chat_id: int,
+    user_id: int,
     date_from: int,
     date_to: int,
 ):
@@ -77,12 +78,14 @@ def get_messages_for_date(
             SELECT *
             FROM raw_telegram_messages
             WHERE chat_id = ?
+              AND user_id = ?
               AND message_date >= ?
               AND message_date < ?
             ORDER BY message_date
             """,
             (
                 chat_id,
+                user_id,
                 date_from,
                 date_to,
             ),
