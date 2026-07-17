@@ -10,47 +10,37 @@ from trailslog.database.database import get_record
 from trailslog.models import Block
 
 
-def render_block(report, block, level):
+def render_tree(
+    report: list[str],
+    block: Block,
+    level: int = 0,
+):
     indent = "    " * level
 
-    report.append(
-        f"{indent}{block.row['text']}"
-    )
+    if level == 0:
+        report.append(
+            f"• {record_title(block)}"
+        )
+    else:
+        report.append(
+            f"{indent}{block.row['text']}"
+        )
 
     for child in visible_children(block):
-        render_block(
+        render_tree(
             report,
             child,
             level + 1,
         )
 
 
-def render_record(
-    report: list[str],
-    record: Block,
-):
-    text = record.row["text"]
+def record_title(block):
+    command = record_command(block)
 
-    if text.startswith("/"):
-        command = text[1:].split()[0]
+    if command is None:
+        return block.row["text"]
 
-        title = ACTIVITIES.get(
-            command,
-            command,
-        )
-    else:
-        title = text
-
-    report.append(
-        f"• {title}"
-    )
-
-    for child in visible_children(record):
-        render_block(
-            report,
-            child,
-            level=1,
-        )
+    return ACTIVITIES.get(command, command)
 
 
 def visible_children(block):
@@ -71,8 +61,16 @@ def is_bot_message(block: Block) -> bool:
     return int(block.row["is_bot"]) == 1
 
 
-def build_today_report(chat_id: int, user_id: int):
+def record_command(block: Block):
+    text = block.row["text"]
 
+    if not text.startswith("/"):
+        return None
+
+    return text[1:].split()[0]
+
+
+def build_today_report(chat_id: int, user_id: int):
     now = datetime.now()
 
     start = datetime(
@@ -100,16 +98,14 @@ def build_today_report(chat_id: int, user_id: int):
             root["telegram_message_id"],
         )
 
-        render_record(
+        render_tree(
             report,
             record,
         )
         
-        if root["text"].startswith("/"):
-
-            completed.add(
-                root["text"][1:].split()[0]
-            )
+        command = record_command(record)
+        if command:
+            completed.add(command)
 
         report.append("")
     
@@ -125,7 +121,6 @@ def build_today_report(chat_id: int, user_id: int):
 
 
 def append_goal_status(report, completed):
-
     goal = GOALS.get("daily")
 
     if goal is None:
