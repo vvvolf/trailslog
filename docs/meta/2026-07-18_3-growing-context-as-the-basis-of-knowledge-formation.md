@@ -54,6 +54,6 @@ Knowledge
 
 Её происхождение описано в документе:
 
-[Three context growth experiments](./2026-07-18_2-three-context-growth-experiments.md)
+[Three context growth experiments](./2026-07-18_2-KA-three-context-growth-experiments.md)
 
 Практическая ценность гипотезы должна проверяться дальнейшими экспериментами.
