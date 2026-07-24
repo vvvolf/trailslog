@@ -1,6 +1,6 @@
 ---
 category: Inbox
-status: captured
+status: meta_integrated_partially
 work_item_scope: |
     Исследование организации входного конвейера TrailsLog.
 

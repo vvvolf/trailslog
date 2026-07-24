@@ -14,6 +14,8 @@
 
 ```md
 ---
+category: Inbox
+status: captured
 work_item_scope: |
     ...
 

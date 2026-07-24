@@ -1,4 +1,6 @@
 ---
+category: Inbox
+status: meta_integrated_partially
 work_item_scope: |
     Исследование семантики метаданных Work Item и возможного разделения
     ответственности между существующими и потенциальными полями.
