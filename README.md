@@ -32,6 +32,6 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `src/` — source code
 - `config/` — example configuration files
 - `data/` — runtime data and local user configuration
-- `docs/meta/` — project history, design notes and rationale
+- `docs/meta/` — project history, design notes and rationale; includes the knowledge conveyor (`work_items/`, `work_item_trails/`)
 
 The project grows incrementally. Every new component should solve a real problem and remain understandable.
