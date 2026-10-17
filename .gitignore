@@ -12,4 +12,4 @@ __pycache__/
 data/
 src/trailslog/.env
 
-docs/work_items/
+docs/meta/work_items/
