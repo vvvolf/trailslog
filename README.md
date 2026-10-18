@@ -32,6 +32,19 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `src/` — source code
 - `config/` — example configuration files
 - `data/` — runtime data and local user configuration
-- `docs/meta/` — project history, design notes and rationale; includes the knowledge conveyor (`work_items/`, `work_item_trails/`)
+
+### Documentation
+
+- `docs/meta/` — project history, design notes and rationale; includes the
+  knowledge conveyor (`work_items/`, `work_item_trails/`);
+- `docs/log/` — project journal: course and key questions;
+- `docs/meta/knowledge/` — knowledge base; key documents:
+  `2026-07-13-why-trailslog.md` (project origins),
+  `2026-07-14-capture-principles.md` (capture principles);
+- `docs/meta/artefacts/working_set.md` — compact digest for AI dialogue with
+  no repository access; may lag behind current understanding — the living
+  sources are the documents in `docs/meta/knowledge/`;
+- `docs/tracks/ideas/` — implementation tasks and ideas; draft `work_items/`
+  are kept locally and are not versioned.
 
 The project grows incrementally. Every new component should solve a real problem and remain understandable.
