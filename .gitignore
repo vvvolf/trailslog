@@ -13,3 +13,7 @@ data/
 src/trailslog/.env
 
 work_items/
+
+# Local task list (replaced each session, not versioned)
+docs/next-tasks.md
+docs/session.md
