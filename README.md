@@ -55,6 +55,9 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
   the documents in `docs/meta/knowledge/`) and `glossary.md` (terms with
   sources and readiness marks); the folder readme lists all files;
 - `docs/tracks/ideas/` — implementation tasks and ideas; draft `work_items/`
-  are kept locally and are not versioned.
+  are kept locally and are not versioned;
+- `docs/trailslog_ai_ui/` — experiment: specialized AI interfaces as
+  derived artifacts of the knowledge system (LLM as the execution
+  environment, prompts as executable interfaces).
 
 The project grows incrementally. Every new component should solve a real problem and remain understandable.
