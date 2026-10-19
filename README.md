@@ -6,6 +6,14 @@ Instead of forcing rigid data structures, it records what people actually want t
 
 Current status: early development.
 
+The project is a loop: capture → files → interpretation. Capture is the
+only stage that must be cheap and in the moment; interpretation is
+deliberately deferred and replaceable — a person, a script, or any AI
+model. What persists is the raw data and the conventions for working with
+it. Portability of data and conventions is therefore a core requirement,
+not a nice-to-have: the interpreter is interchangeable, the accumulated
+material is the asset.
+
 ## Current features
 
 - records predefined activities using Telegram commands;
