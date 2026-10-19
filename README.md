@@ -48,7 +48,7 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `docs/log/` — project journal: course and key questions;
 - `docs/meta/knowledge/` — knowledge base; key documents:
   `2026-07-13-why-trailslog.md` (project origins),
-  `2026-07-14-capture-principles.md` (capture principles);
+  `2026-07-14_2-capture-principles.md` (capture principles);
 - `docs/meta/artefacts/` — derived documents and their support prompts:
   `working_set.md` (compact digest for AI dialogue with no repository
   access; may lag behind current understanding — the living sources are

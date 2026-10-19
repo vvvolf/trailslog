@@ -74,7 +74,7 @@ scope_of_understanding: |
 
 Именно в этот момент впервые появилась рабочая гипотеза, что выращивание контекста может рассматриваться как один из механизмов формирования знаний.
 
-Позднее данное понимание было оформлено отдельным документом с гипотезой [Growing context as the basis of knowledge formation](./2026-07-18_5-growing-context-as-a-knowledge-formation-principle.md).
+Позднее данное понимание было оформлено отдельным документом с гипотезой [Growing context as the basis of knowledge formation](./2026-07-18_6-growing-context-as-a-knowledge-formation-principle.md).
 
 ## Следствия
 
@@ -94,6 +94,6 @@ scope_of_understanding: |
 
 ## Статус
 
-Документ фиксирует происхождение рабочей гипотезы, позднее оформленной как [Growing context as the basis of knowledge formation](./2026-07-18_5-growing-context-as-a-knowledge-formation-principle.md).
+Документ фиксирует происхождение рабочей гипотезы, позднее оформленной как [Growing context as the basis of knowledge formation](./2026-07-18_6-growing-context-as-a-knowledge-formation-principle.md).
 
 Его задача состоит не в доказательстве самой гипотезы, а в сохранении истории её возникновения.

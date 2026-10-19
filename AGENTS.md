@@ -10,11 +10,11 @@
   `git add .`; `git push` запрещён;
 - коммит фиксирует одну законченную единицу понимания: её документы — этим
   коммитом, чужие единицы — другими (см.
-  `docs/meta/knowledge/2026-07-16-git-as-knowledge-history.md`);
+  `docs/meta/knowledge/2026-07-16_5-git-as-knowledge-history.md`);
 - правка документа Knowledge acquisition — изменение понимания: если её
   происхождение не очевидно из изменения и сообщения коммита, заведи новый
   KA, объясняющий эту правку (см.
-  `docs/meta/knowledge/2026-07-15-KA-2-when-an-explanation-becomes-knowledge.md`);
+  `docs/meta/knowledge/2026-07-15_3-KA-2-when-an-explanation-becomes-knowledge.md`);
 - утверждения о состоянии — со ссылкой на источник или пометкой
   [не проверено]; в конце оценки — раздел «что я не проверял»;
 - на многослойное сообщение — сначала карта нитей;

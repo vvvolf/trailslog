@@ -109,8 +109,8 @@ scope_of_understanding: |
 
 Подробнее:
 
-- [Git как механизм сопровождения истории знаний](./2026-07-16-git-as-knowledge-history.md)
-- [Почему редактирование meta стало открытым вопросом](./2026-07-15_KA-1-why-meta-editing-is-an-open-question.md)
-- [Когда объяснение становится знанием](./2026-07-15_KA-2-when-an-explanation-becomes-knowledge.md)
-- [Experiment: introducing scope_of_understanding](./2026-07-18_KA-origin-of-scope-of-understanding.md)
-- [Experiment: Work Item и Trail](./2026-07-19_KA-work_items_and_trails_architecture.md)
+- [Git как механизм сопровождения истории знаний](./2026-07-16_5-git-as-knowledge-history.md)
+- [Почему редактирование meta стало открытым вопросом](./2026-07-15_2-KA-1-why-meta-editing-is-an-open-question.md)
+- [Когда объяснение становится знанием](./2026-07-15_3-KA-2-when-an-explanation-becomes-knowledge.md)
+- [Experiment: introducing scope_of_understanding](./2026-07-18_7-KA-origin-of-scope-of-understanding.md)
+- [Experiment: Work Item и Trail](./2026-07-19-KA-work_items_and_trails_architecture.md)

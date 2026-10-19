@@ -178,13 +178,13 @@ scope_of_understanding: |
 
 
 
-- [Git как механизм сопровождения истории знаний](./2026-07-16-git-as-knowledge-history.md)
+- [Git как механизм сопровождения истории знаний](./2026-07-16_5-git-as-knowledge-history.md)
 
-- [Почему редактирование meta стало открытым вопросом](./2026-07-15_KA-1-why-meta-editing-is-an-open-question.md)
+- [Почему редактирование meta стало открытым вопросом](./2026-07-15_2-KA-1-why-meta-editing-is-an-open-question.md)
 
-- [Когда объяснение становится знанием](./2026-07-15_KA-2-when-an-explanation-becomes-knowledge.md)
+- [Когда объяснение становится знанием](./2026-07-15_3-KA-2-when-an-explanation-becomes-knowledge.md)
 
-- [Experiment: introducing scope_of_understanding](./2026-07-18_KA-origin-of-scope-of-understanding.md)
+- [Experiment: introducing scope_of_understanding](./2026-07-18_7-KA-origin-of-scope-of-understanding.md)
 
 
 
@@ -1248,7 +1248,7 @@ Knowledge
 
 
 
-[Three context growth experiments](./2026-07-18_2-KA-three-context-growth-experiments.md)
+[Three context growth experiments](./2026-07-18_3-KA-three-context-growth-experiments.md)
 
 
 
@@ -1408,7 +1408,7 @@ scope_of_understanding: |
 
 
 
-Позднее данное понимание было оформлено отдельным документом с гипотезой [Growing context as the basis of knowledge formation](./2026-07-18_5-growing-context-as-a-knowledge-formation-principle.md).
+Позднее данное понимание было оформлено отдельным документом с гипотезой [Growing context as the basis of knowledge formation](./2026-07-18_6-growing-context-as-a-knowledge-formation-principle.md).
 
 
 
@@ -1448,7 +1448,7 @@ scope_of_understanding: |
 
 
 
-Документ фиксирует происхождение рабочей гипотезы, позднее оформленной как [Growing context as the basis of knowledge formation](./2026-07-18_5-growing-context-as-a-knowledge-formation-principle.md).
+Документ фиксирует происхождение рабочей гипотезы, позднее оформленной как [Growing context as the basis of knowledge formation](./2026-07-18_6-growing-context-as-a-knowledge-formation-principle.md).
 
 
 
@@ -1824,7 +1824,7 @@ scope_of_understanding:
 
 
 
-- [Что вообще должно попадать в meta?](./2026-07-14-what-belongs-in-meta.md#scope-of-understanding)
+- [Что вообще должно попадать в meta?](./2026-07-14_4-what-belongs-in-meta.md#scope-of-understanding)
 
 
 

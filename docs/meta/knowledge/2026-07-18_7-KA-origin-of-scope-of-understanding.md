@@ -113,6 +113,6 @@ scope_of_understanding:
 
 Сама методика описана в документе:
 
-- [Что вообще должно попадать в meta?](./2026-07-14-what-belongs-in-meta.md#scope-of-understanding)
+- [Что вообще должно попадать в meta?](./2026-07-14_4-what-belongs-in-meta.md#scope-of-understanding)
 
 Данный документ сохраняет историю её возникновения.
