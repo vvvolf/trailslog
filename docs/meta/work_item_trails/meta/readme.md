@@ -8,8 +8,9 @@ Work Item рассматривается как самостоятельная �
 
 ## Структура
 
-- `specification.md` — спецификация формата Work Item.
-- `chatgpt_prompt.md` — промпт, реализующий данную спецификацию для ChatGPT.
+- `spec_work_item.md` — спецификация формата Work Item.
+- `prompt_work_item_generation_gpt.md` — промпт, реализующий данную
+  спецификацию для ChatGPT.
 
 ## Принцип
 
