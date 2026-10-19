@@ -49,9 +49,11 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `docs/meta/knowledge/` — knowledge base; key documents:
   `2026-07-13-why-trailslog.md` (project origins),
   `2026-07-14-capture-principles.md` (capture principles);
-- `docs/meta/artefacts/working_set.md` — compact digest for AI dialogue with
-  no repository access; may lag behind current understanding — the living
-  sources are the documents in `docs/meta/knowledge/`;
+- `docs/meta/artefacts/` — derived documents and their support prompts:
+  `working_set.md` (compact digest for AI dialogue with no repository
+  access; may lag behind current understanding — the living sources are
+  the documents in `docs/meta/knowledge/`) and `glossary.md` (terms with
+  sources and readiness marks); the folder readme lists all files;
 - `docs/tracks/ideas/` — implementation tasks and ideas; draft `work_items/`
   are kept locally and are not versioned.
 
