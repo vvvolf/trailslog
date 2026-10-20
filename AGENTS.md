@@ -51,6 +51,8 @@
   (устоявшиеся изменения — сразу, с отметкой в чате); у каждой позиции должен
   быть источник в конвейере (`docs/tracks/ideas/work_items/`,
   `docs/meta/work_items/`) — фиксируя задачу, сразу сохраняй её туда.
+- черновики WI — вне git (`docs/tracks/ideas/work_items/`,
+  `docs/meta/work_items/`); следы — в git (`docs/meta/work_item_trails/`).
 
 ## План сессии
 
