@@ -53,6 +53,7 @@
   `docs/meta/work_items/`) — фиксируя задачу, сразу сохраняй её туда.
 - черновики WI — вне git (`docs/tracks/ideas/work_items/`,
   `docs/meta/work_items/`), следы — в git (`docs/meta/work_item_trails/`);
+  WI живёт в одном месте — после фиксации следа черновик удаляется;
   полнота следа и размещение — в
   `docs/meta/work_item_trails/meta/readme.md`.
 
