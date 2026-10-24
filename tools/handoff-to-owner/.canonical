@@ -1,0 +1,6 @@
+This is the canonical copy of the handoff tool.
+
+Do not run it from this directory without --target: it would try to hand off
+the tools folder. The script refuses this when .canonical is present.
+
+Copy it into a target or use --target.

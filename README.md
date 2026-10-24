@@ -40,6 +40,8 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `src/` — source code
 - `config/` — example configuration files
 - `data/` — runtime data and local user configuration
+- `tools/` — small self-contained reference tools that are part of the
+  methodology's onboarding; each has its own README
 
 ### Documentation
 
