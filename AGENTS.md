@@ -56,10 +56,14 @@
 - `tools/handoff-to-owner/` — передача владения папкой/репозиторием,
   созданными агентом; использовать с явными `--owner` и `--agent`, без имён
   по умолчанию;
-- one-shot копия добавляет своё имя в локальный `.git/info/exclude` (не
-  `.gitignore`), передаёт владение, сохраняет ACL агенту и удаляет себя;
-- паттерн и границы —
+- основной режим — reusable: `--target <dir>`; ничего не копируется и не
+  удаляется; one-shot копия — только для переносимой папки, тогда имя
+  добавляется в локальный `.git/info/exclude` (не `.gitignore`), а скрипт
+  удаляет себя после успеха;
+- предыдущий KA —
   `docs/meta/knowledge/2026-10-25_1-KA-agent-created-repo-handoff.md`;
+- переход и обоснование —
+  `docs/meta/knowledge/2026-10-25_3-KA-handoff-reusable-mode-and-acl-order.md`;
 - практическая инструкция —
   `tools/handoff-to-owner/README.md`.
 
