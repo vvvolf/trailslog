@@ -56,8 +56,11 @@ Markdown-патч, необходимый для актуализации `worki
 Промпт генератора документов `Knowledge acquisition` из обсуждений.
 
 Не относится к сопровождению Working Set. Использовался для формирования
-текущего корпуса документов KA в `docs/meta/knowledge/`. Полное описание
-будет дописано при возвращении к теме генераторов.
+текущего корпуса документов KA в `docs/meta/knowledge/`. Генератор
+заполняет метаданные участия (`composed_by`, `lead`,
+`human_participation`, `participation_updated`); словарь и правила —
+[`../knowledge/2026-10-26_1-KA-participation-authorship-and-lead.md`](../knowledge/2026-10-26_1-KA-participation-authorship-and-lead.md).
+Полное описание будет дописано при возвращении к теме генераторов.
 
 ### glossary.md
 

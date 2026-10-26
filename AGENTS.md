@@ -19,6 +19,13 @@
   корректирующим коммитом;
 - отсылки между KA (ссылки «продолжение/предыдущее», `related`) —
   метаданные; их можно добавлять без нового KA, не меняя содержание;
+- в KA заполняются метаданные участия: `composed_by`, `lead`,
+  `human_participation`, `participation_updated`; словарь и правила —
+  `docs/meta/knowledge/2026-10-26_1-KA-participation-authorship-and-lead.md`;
+- агент по умолчанию ставит `composed_by: agent`, `lead: agent`,
+  `human_participation: none`; он не выставляет человеческое участие;
+- человек сам обновляет `human_participation` (`skim`, `line`, `author`)
+  и при необходимости `lead: human`; это метаданные, тело KA не меняется;
 - модель ролей KA/живых документов —
   `docs/meta/knowledge/2026-10-19_6-knowledge-acquisition-as-read-only-trail.md`;
 - KA не содержит приватных имён, путей и размеров; приватные наблюдения

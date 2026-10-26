@@ -47,6 +47,11 @@ category: ...
 
 knowledge_type: Knowledge acquisition
 
+composed_by: agent          # agent | human | joint
+lead: agent                 # agent | human
+human_participation: none   # none | skim | line | author
+participation_updated: YYYY-MM-DD  # YYYY-MM-DD
+
 scope_of_understanding: |
     ...
 ---
@@ -127,6 +132,34 @@ scope_of_understanding: |
 ```yaml
 Knowledge acquisition
 ```
+
+---
+
+### composed_by, lead, human_participation, participation_updated
+
+Обязательные метаданные участия. Агент заполняет их при создании KA:
+
+- `composed_by`: `agent` — текст составил агент; `human` — человек;
+  `joint` — существенный текст с обеих сторон;
+- `lead`: `agent` или `human` — кто отвечает за включение и судьбу KA;
+- `human_participation`: `none` — человек не открывал; `skim` —
+  посмотрел наскоро; `line` — выверил построчно; `author` — писал или
+  переписывал;
+- `participation_updated`: дата изменения этих полей, `YYYY-MM-DD`.
+
+Правила:
+
+- по умолчанию агент ставит `composed_by: agent`, `lead: agent`,
+  `human_participation: none`;
+- агент не имеет права утверждать человеческое участие выше `none`;
+- человек сам меняет `human_participation` и при необходимости `lead`;
+- `human_participation: author` требует `composed_by: human` или `joint`;
+- это метаданные: их можно обновлять без нового KA, не меняя тело и
+  `scope_of_understanding`;
+- отсутствие полей в старом KA означает `unknown`, а не проверку.
+
+Словарь и обоснование —
+`docs/meta/knowledge/2026-10-26_1-KA-participation-authorship-and-lead.md`.
 
 ---
 
