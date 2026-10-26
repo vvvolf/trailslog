@@ -29,8 +29,9 @@
 - модель ролей KA/живых документов —
   `docs/meta/knowledge/2026-10-19_6-knowledge-acquisition-as-read-only-trail.md`;
 - KA не содержит приватных имён, путей и размеров; приватные наблюдения
-  ведутся в private log приватного репозитория, а KA формулирует только
-  обобщённое понимание. WI и Trail могут быть приватными и наследуют слой
+  ведутся в private log приватного track (`docs/tracks/private/log/`), а KA
+  формулирует только обобщённое понимание. Приватный конвейер —
+  `docs/tracks/private/`. WI и Trail могут быть приватными и наследуют слой
   источника. Публичный KA не ссылается на private log; private log может
   ссылаться на публичный KA. Политика —
   `docs/meta/artefacts/private-log-policy.md`;
@@ -109,7 +110,9 @@
   `docs/meta/work_items/`), следы — в git (`docs/meta/work_item_trails/`);
   WI живёт в одном месте — после фиксации следа черновик удаляется;
   полнота следа и размещение — в
-  `docs/meta/work_item_trails/meta/readme.md`.
+  `docs/meta/work_item_trails/meta/readme.md`;
+- `docs/meta/work_item_trails/README.md` — документация хранилища trail,
+  не Work Item.
 
 ## План сессии
 

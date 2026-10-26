@@ -2,14 +2,17 @@
 
 Практическая политика для приватных наблюдений. Источник решения:
 [`../knowledge/2026-10-25_2-KA-private-observations-and-knowledge-layers.md`](../knowledge/2026-10-25_2-KA-private-observations-and-knowledge-layers.md).
+Каноническая карта слоёв: [`layer-map.md`](layer-map.md).
 
 ## Слои
 
 ```text
-KA          — обобщённое понимание, без приватных идентификаторов
-private log — сырые наблюдения и evidence, приватный репозиторий
-WI          — будущая работа, черновик вне git
-Trail       — история WI, в том же слое
+KA            — обобщённое понимание, без приватных идентификаторов
+public log    — публичный журнал проекта, docs/log/
+private log   — сырые наблюдения и evidence, docs/tracks/private/log/
+private track — приватный конвейер и материалы, docs/tracks/private/
+WI            — будущая работа, черновик вне git
+Trail         — история WI, в том же слое
 ```
 
 ## Что попадает в private log
@@ -41,12 +44,12 @@ raw → triaged → linked / compacted / archived / deleted
 
 ## Индекс
 
-В приватном репозитории:
+В приватном track проекта:
 
 ```text
-docs/log/private/index.md
-docs/log/private/YYYY-MM-DD-topic.md
-docs/log/private/archive/
+docs/tracks/private/log/index.md
+docs/tracks/private/log/YYYY-MM-DD-topic.md
+docs/tracks/private/log/archive/
 ```
 
 Запись индекса:
@@ -56,6 +59,21 @@ id | date | topic | status | links | retention
 ```
 
 Поиск идёт по индексу, а не по всему сырому журналу.
+
+## Private track
+
+`docs/tracks/private/` — приватный track проекта. В нём:
+
+```text
+log/    — private log
+...     — приватный конвейер, WI, tracks и материалы
+```
+
+Private track не является публичной частью проекта и не заменяет KA. WI и Trail наследуют слой источника: приватный WI — приватный Trail.
+
+## Миграция
+
+Старый путь `docs/log/private/` устарел. Целевой путь — `docs/tracks/private/log/`. Существующие приватные логи мигрируют отдельно; публичный журнал остаётся в `docs/log/`.
 
 ## Retention
 
@@ -90,4 +108,5 @@ id | date | topic | status | links | retention
 - private log → public KA: допустимо;
 - public KA → private log: запрещено;
 - private KA → private log: допустимо;
-- публичный артефакт должен быть понятен без private log.
+- публичный артефакт должен быть понятен без private log;
+- карта слоёв: [`layer-map.md`](layer-map.md).
