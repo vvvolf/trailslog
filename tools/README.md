@@ -18,4 +18,5 @@ rhythm, extract it into a separate repository and leave a link here.
 
 ## Tools
 
-No tools are currently listed.
+- [`new-project/`](new-project/README.md) — create a project from the
+  canonical TrailsLog template.

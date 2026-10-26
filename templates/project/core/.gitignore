@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Local data and caches
+data/
+out/
+*.log
+
+# Local task/session files
+docs/next-tasks.md
+docs/session.md
+
+# Work Item drafts (local, not versioned)
+work_items/
+docs/meta/work_items/
+docs/tracks/ideas/work_items/
+
+# Private track: log and private pipeline (local or private repository)
+docs/tracks/private/
+
+# Environment
+.env

@@ -51,13 +51,19 @@ The bot intentionally postpones parsing and interpretation. Raw data is consider
 - `docs/meta/knowledge/` — knowledge base; key documents:
   `2026-07-13-why-trailslog.md` (project origins),
   `2026-07-14_2-capture-principles.md` (capture principles);
+- `templates/project/` — canonical skeleton for a new project; `core/` is
+  copied by `tools/new-project/new-project.sh`; workspace-specific users and
+  paths stay outside this template;
 - `docs/meta/artefacts/` — derived documents and their support prompts:
   `layer-map.md` (canonical map of layers and paths), `private-log-policy.md`
-  (private log and private track), `working_set.md` (compact digest for AI
+  (private log and private track), `project-template.md` (template contract),
+  `working_set.md` (compact digest for AI
   dialogue with no repository access; may lag behind current understanding —
   the living sources are the documents in `docs/meta/knowledge/`) and
   `glossary.md` (terms with sources and readiness marks); the folder readme
   lists all files;
+- `docs/meta/capabilities/` — capability cards for the local agent:
+  `new-project`; cards are living contracts, not KA;
 - `docs/tracks/ideas/` — implementation tasks and ideas; draft `work_items/`
   are kept locally and are not versioned;
 - `docs/tracks/private/` — private track: `log/` for the private log and the
